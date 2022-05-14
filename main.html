@@ -11,6 +11,7 @@
 
 <body>
     <section class="sec">
+        <div class="circle"></div>
         <header>
             <a href="#"><img src="logo.png" class="logo"></a>
             <ul>
@@ -37,25 +38,26 @@
         <div class="content">
             <div class="textBox">
                 <h2>Somos<br><span>diferentes</span></h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ipsa iure tenetur ipsum! Enim
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ipsa iure tenetur ipsum! Enim
                     voluptatem atque natus quisquam non. Temporibus minima tempore recusandae? Quibusdam ut tenetur non
                     praesentium consequatur officiis?
                 </p>
                 <a href="#">Haz tu pedido</a>
             </div>
             <div class="imgBox">
-                <img src="burrito.png" class="burrito" alt="burrito icon">
+                <img src="burrito.png" class="burrito" alt="burrito icono">
             </div>
         </div>
         <ul class="thumb">
             <li>
-                <img src="nachos.png">
+                <img src="nachos.png" onclick="imgslider('nachos.png')" alt="nachos icono">
             </li>
             <li>
-                <img src="quesadilla.png">
+                <img src="quesadilla.png" onclick="imgslider('quesadilla.png')"alt="quesadillas icono">
             </li>
             <li>
-                <img src="burrito.png">
+                <img src="burrito.png" onclick="imgslider('burrito.png')"alt="burrito icono">
             </li>
         </ul>  
         <ul class="sci">
@@ -70,6 +72,12 @@
             </li>
         </ul>  
     </section>
+    <script type="text/javascript">
+        function imgslider(image) {
+            document.querySelector('.burrito').src = image;
+        }
+
+    </script>
 
 </body>
 

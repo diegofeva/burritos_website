@@ -40,7 +40,6 @@ header .logo {
 header ul {
    position: relative;
    display: flex;
-
 }
 
 header ul li {
@@ -75,15 +74,15 @@ header ul li a {
     font-weight: 900;
     text-transform: uppercase;
 
-}
+} 
 
-.content .textBox h2 span {
+ .content .textBox h2 span {
     font-size: 2em;
 
 }
 
 .content .textBox p {
-    color:#05cbf3;;
+    color:#05cbf3; 
   
 }
 
@@ -91,10 +90,10 @@ header ul li a {
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
-    background: #9ae70ccf;
+    background: #89ab02;
     color: #fff;
     border-radius: 40px;
-    font-weight: 500;
+    font-weight: 1000;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
@@ -166,4 +165,45 @@ header ul li a {
     max-width: 70px;
     max-height: 70px;
     
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #05cbf3;
+    clip-path: circle(350px at right 948px);
+
+}
+
+@media (max-width: 991px) {
+
+    section {
+        padding: 80px;;
+    }
+
+    header {
+        padding: 20px 40px;
+    }
+
+    header .logo {
+        position: relative;
+        max-width: 60px;
+    } */
+
+    /* header ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+    } */
 }
