@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    transition: 0.5s;
+    flex-direction: column;
+}
+
+header {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+header ul {
+    display: flex;
+    position: relative;
+    list-style: none; 
+}
+
+header ul li a {
+    display: inline-block;
+    color: #05cbf3;;
+    font-weight: 700;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.pedido {
+    position: relative;
+    display: flex;
+    width: 813px;
+    padding-top: 185px;
+    padding-bottom: 26px;
+    justify-content: center;
+}
+
+
+.pedido h1 {
+    border-style: solid;
+    border-radius: 6px;
+    padding: 31px 164px;
+}
+    
+
+.shop {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.shop iframe {
+    width: 813px;
+    min-height: 90vh;
+    border: none;
+}
+
+.ads1 {
+    width: 25%;
+    text-align: center;
+}
+
+.ads2 {
+    width: 25%;
+    text-align: center;
+}
+
+
+
+
+

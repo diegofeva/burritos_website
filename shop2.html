@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shopCSS2.css">
     <title>Burritos bar</title>
 </head>
 
@@ -35,61 +35,43 @@
                 </li>
             </ul>
         </header>
-        <div class="content">
-            <div class="textBox">
-                <h1>Restaurante Mexicano<br><span>Burritos</span></h1>
+        <div class="pedido">
+            <h1>Haz tu pedido</h1>
+        </div>
+        <div class="content">  
+            <div class="ads1">
+                <h2>Restaurante Mexicano<br><span>Burritos</span></h2>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ipsa iure tenetur ipsum! Enim
                     voluptatem atque natus quisquam non. Temporibus minima tempore recusandae? Quibusdam ut tenetur non
                     praesentium consequatur officiis?
                 </p>
-                
-                <a href="#">Haz tu pedido</a>
+                <a href="#">Suscribete</a>
             </div>
-            <div class="imgBox">
-                <img src="burrito.png" class="slider" alt="burrito icono">
+
+            <iframe src="https://www.foodbooking.com/api/fb/pm_g_v_m" title="BURRITOS SHOP"></iframe>   
+           
+            <div class="ads2">
+                <h2>Restaurante Mexicano<br><span>Burritos</span></h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ipsa iure tenetur ipsum! Enim
+                    voluptatem atque natus quisquam non. Temporibus minima tempore recusandae? Quibusdam ut tenetur non
+                    praesentium consequatur officiis?
+                </p>
+                <a href="#">Suscribete</a>
             </div>
         </div>
-        <ul class="thumb">
-            <li>
-                <img src="nachos.png" onclick="imgslider('nachos.png')" alt="nachos icono">
-            </li>
-            <li>
-                <img src="quesadilla.png" onclick="imgslider('quesadilla.png')"alt="quesadillas icono">
-            </li>
-            <li>
-                <img src="burrito.png" onclick="imgslider('burrito.png')"alt="burrito icono">
-            </li>
-        </ul>  
-        <ul class="sci">
-            <li>
-                <a href="#"><img src="facebook.png"></a>
-            </li>
-            <li>
-                <a href="#"><img src="instagram.png"></a>
-            </li>
-            <li>
-                <a href="#"><img src="twitter.png"></a>
-            </li>
-        </ul> 
         <svg  class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#05cbf3" fill-opacity="1" d="M0,192L120,208C240,224,480,256,720,256C960,256,1200,224,1320,208L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
         </svg>
     </section>
     <script type="text/javascript">
-        function imgslider(image) {
-            document.querySelector('.slider').src = image;
-            // const text = document.querySelector('.mex');
-            // text.innerHTML = "Ciego";
-        }
-
         function menuToggle() {
             const toggleMenu = document.querySelector('.toggleMenu');
             const navigation = document.querySelector('.navigation');
             toggleMenu.classList.toggle('active');
             navigation.classList.toggle('active');
         }
-
     </script>
 
 </body>
