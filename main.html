@@ -16,7 +16,7 @@
             <div class="toggleMenu" onclick="menuToggle();"></div>
             <ul class="navigation">
                 <li>
-                    <a href="#">Inicio</a>
+                    <a class="a" href="#">Inicio</a>
                 </li>
                 <li>
                     <a href="#">Haz tu pedido</a>
@@ -37,14 +37,59 @@
         </header>
         <div class="content">
             <div class="textBox">
-                <h1>Restaurante Mexicano<br><span>Burritos</span></h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ipsa iure tenetur ipsum! Enim
-                    voluptatem atque natus quisquam non. Temporibus minima tempore recusandae? Quibusdam ut tenetur non
-                    praesentium consequatur officiis?
-                </p>
-                
-                <a href="#">Haz tu pedido</a>
+                <div class="h1Info">
+                    <h1>Restaurante Mexicano<br><span>Burritos</span></h1>
+                    <p>Somos los  mejores de la ciudad y somos tambien los mejores del mundo</p>
+                </div>   
+                <div class="h2Tags"> 
+                    <div class="restInfo">
+                        <h2 onclick="h2Toggle('acerca')">#Acerca de nosotros</h2>
+                        <h2>#Servicios</h2>
+                        <h2>#Carta</h2>
+                        <h2>#Horario</h2>
+                        <h2>#Ubicacion</h2>   
+                        <h2>#Ofertas</h2>                       
+                    </div>
+                    <div id="acerca" class="AcercaDeNosotros">
+                        <h2 onclick="h2Toggle('acerca')">mexicanos</h2>
+                        <h2>diferentes</h2>
+                        <h2>cocina moderna</h2>
+                        <h2>comida casera</h2>  
+                        <h2>opciones veganas</h2>
+                        <h2>sin sazonadores artificiales</h2>
+
+                    </div>     
+                    <!-- <div class="carta">
+                        <h2>#Acerca de nosotros</h2>
+                        <h2>#Servicios</h2>
+                        <h2>#Carta</h2>
+                        <h2>#Horario</h2>
+                        <h2>#Ubicacion</h2>  
+                    </div>
+                    <div class="horario">
+                        <h2>#Acerca de nosotros</h2>
+                        <h2>#Servicios</h2>
+                        <h2>#Carta</h2>
+                        <h2>#Horario</h2>
+                        <h2>#Ubicacion</h2>  
+                    </div>
+                    <div class="ubicacion">
+                        <h2>#Acerca de nosotros</h2>
+                        <h2>#Servicios</h2>
+                        <h2>#Carta</h2>
+                        <h2>#Horario</h2>
+                        <h2>#Ubicacion</h2>  
+                    </div>  
+                    <div class="ofertas">
+                        <h2>#Acerca de nosotros</h2>
+                        <h2>#Servicios</h2>
+                        <h2>#Carta</h2>
+                        <h2>#Horario</h2>
+                        <h2>#Ubicacion</h2>  
+                    </div>                         -->
+                </div>    
+               
+                <!-- <a class="shopButton" href="#">Haz tu pedido</a> -->
             </div>
             <div class="imgBox">
                 <img src="burrito.png" class="slider" alt="burrito icono">
@@ -88,6 +133,13 @@
             const navigation = document.querySelector('.navigation');
             toggleMenu.classList.toggle('active');
             navigation.classList.toggle('active');
+        }
+
+        function h2Toggle(id) {
+            const toggleRestInfo = document.querySelector('.restInfo')
+            const toggleProps = document.getElementById(id)
+            toggleRestInfo.classList.toggle('active')
+            toggleProps.classList.toggle('active')
         }
 
     </script>

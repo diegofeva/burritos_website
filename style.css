@@ -60,6 +60,7 @@ header ul li a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 1;
 }
 
 .content .textBox {
@@ -83,12 +84,55 @@ header ul li a {
 
 }
 
-.content .textBox p {
+
+/* .content .textBox p {
     color:#05cbf3; 
-  
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+} */
+
+.content .textBox .h2Tags {
+    position: relative;
+    display: flex;  
 }
 
-.content .textBox a {
+.content .textBox .h2Tags .restInfo {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    cursor: pointer;
+    visibility: visible;
+}
+
+.content .textBox .h2Tags .restInfo.active {
+    position: absolute;
+    visibility: hidden;
+}
+
+.content .textBox h2 {
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.content .textBox .h2Tags .AcercaDeNosotros {
+    position: absolute;
+    visibility: hidden;
+}
+
+.content .textBox .h2Tags .AcercaDeNosotros.active {
+    position: relative;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.content .textBox .shopButton {
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
@@ -98,8 +142,7 @@ header ul li a {
     font-weight: 1000;
     letter-spacing: 1px;
     text-decoration: none;
-    text-transform: uppercase;
- 
+    text-transform: uppercase;  
 }
 
 .content .imgBox {
