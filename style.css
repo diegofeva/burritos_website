@@ -175,7 +175,7 @@ header ul li a {
     left:0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1143px) {
 
     section {
         padding: 80px;;
@@ -258,8 +258,7 @@ header ul li a {
         flex-direction: column;
         align-items: center;
         max-width: 100%;
-        padding-right: 20px;
-    }
+    }    
 
     .content .textBox h1 {
         font-size: 1.5em;
@@ -299,5 +298,33 @@ header ul li a {
         visibility: hidden;
         opacity: 0;
     
+    }
+}
+
+
+@media (max-width: 607px) {
+    .sci {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 50px;
+        transform: translateY(-107%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .content .textBox h1 {
+        font-size: 1.1em;
+        
+    }
+
+    .thumb li img {
+        max-width: 60px;
+    }
+
+    .content .imgBox img {
+        max-width: 260px;
+        padding-bottom: 60px;
     }
 }
