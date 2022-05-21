@@ -15,7 +15,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
+    background: #ffff;
     transition: 0.5s;
 }
 
@@ -66,6 +66,11 @@ header ul li a {
 .content .textBox {
     position: relative;
     max-width: 600px;
+    position: relative;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content .textBox h1 {
@@ -80,7 +85,7 @@ header ul li a {
 .content .textBox h1 span {
     font-size: 3em;
     line-height: 1em;
-    color: #89ab02;
+    color: #B6C454;
 
 }
 
@@ -112,11 +117,6 @@ header ul li a {
     visibility: hidden;
 }
 
-.content .textBox h2 {
-    padding: 5px;
-    text-transform: uppercase;
-}
-
 .content .textBox .h2Tags .AcercaDeNosotros {
     position: absolute;
     visibility: hidden;
@@ -129,8 +129,104 @@ header ul li a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    cursor: pointer;
 }
 
+.content .textBox .h2Tags .servicios {
+    position: absolute;
+    visibility: hidden;
+}
+
+.content .textBox .h2Tags .servicios.active {
+    position: relative;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.content .textBox .h2Tags .carta {
+    position: absolute;
+    visibility: hidden;
+}
+
+.content .textBox .h2Tags .carta.active {
+    position: relative;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.content .textBox .h2Tags .horario {
+    position: absolute;
+    visibility: hidden;
+}
+
+.content .textBox .h2Tags .horario.active {
+    position: relative;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.content .textBox .h2Tags .ubicacion {
+    position: absolute;
+    visibility: hidden;
+}
+
+.content .textBox .h2Tags .ubicacion.active {
+    position: relative;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.content .textBox .h2Tags .ofertas {
+    position: absolute;
+    visibility: hidden;
+}
+
+.content .textBox .h2Tags .ofertas.active {
+    position: relative;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.content .textBox .h2Tags .newsletter {
+    position: absolute;
+    visibility: hidden;
+}
+
+.content .textBox .h2Tags .newsletter.active {
+    position: relative;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.content .textBox h2 {
+    padding: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
 
 .content .textBox .shopButton {
     display: inline-block;
@@ -241,7 +337,7 @@ header ul li a {
         width: 100%;
         height: 100%;
         background: #fff;
-        z-index: 1;
+        z-index: 2;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -272,7 +368,7 @@ header ul li a {
         background-position: center;
         background-size: 60px;
         background-repeat: no-repeat;
-        z-index: 2;
+        z-index: 3;
         cursor: pointer;
         border-radius: 11px;
     }
@@ -335,12 +431,6 @@ header ul li a {
         display: flex;
         align-items: center;
         flex-direction: column;
-    }
-
-    .circle {
-        visibility: hidden;
-        opacity: 0;
-    
     }
 }
 

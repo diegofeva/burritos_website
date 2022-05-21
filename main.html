@@ -43,53 +43,55 @@
                 </div>   
                 <div class="h2Tags"> 
                     <div class="restInfo">
-                        <h2 onclick="h2Toggle('acerca')">#Acerca de nosotros</h2>
-                        <h2>#Servicios</h2>
-                        <h2>#Carta</h2>
-                        <h2>#Horario</h2>
-                        <h2>#Ubicacion</h2>   
-                        <h2>#Ofertas</h2>                       
+                        <h2 onclick="h2Toggle('.AcercaDeNosotros')">#Acerca de nosotros</h2>
+                        <h2 onclick="h2Toggle('.servicios')">#Servicios</h2>
+                        <h2 onclick="h2Toggle('.carta')">#Carta</h2>
+                        <h2 onclick="h2Toggle('.horario')">#Horario</h2>
+                        <h2 onclick="h2Toggle('.ubicacion')">#Ubicacion</h2>   
+                        <h2 onclick="h2Toggle('.ofertas')">#Ofertas</h2>  
+                        <h2 onclick="h2Toggle('.newsletter')">#newsletter</h2>                     
                     </div>
-                    <div id="acerca" class="AcercaDeNosotros">
-                        <h2 onclick="h2Toggle('acerca')">mexicanos</h2>
+                    <div class="AcercaDeNosotros">
+                        <h2 class="acercaVolver" onclick="h2Toggle('.AcercaDeNosotros')">#volver</h2>
+                        <h2>mexicanos</h2>
                         <h2>diferentes</h2>
                         <h2>cocina moderna</h2>
                         <h2>comida casera</h2>  
                         <h2>opciones veganas</h2>
                         <h2>sin sazonadores artificiales</h2>
 
-                    </div>     
-                    <!-- <div class="carta">
-                        <h2>#Acerca de nosotros</h2>
-                        <h2>#Servicios</h2>
-                        <h2>#Carta</h2>
-                        <h2>#Horario</h2>
-                        <h2>#Ubicacion</h2>  
+                    </div>  
+                    <div class="servicios">
+                        <h2 class="serviciosVolver" onclick="h2Toggle('.servicios')">#volver</h2>
+                        <h2>Disponemos de comedor con 5 mesas por lo que recomendamos reservar mesa en el 986170772 tambien hacemos pedidos a domicilio y recoger </h2>
+                    </div>   
+                    <div class="carta">
+                        <h2 class="cartaVolver" onclick="h2Toggle('.carta')">#volver</h2>
+                        <h2>nachos</h2>
+                        <h2>quesadillas</h2>
+                        <h2>flautas</h2>
+                        <h2>burritos</h2>
+                        <h2>chimichangas</h2>  
                     </div>
                     <div class="horario">
-                        <h2>#Acerca de nosotros</h2>
-                        <h2>#Servicios</h2>
-                        <h2>#Carta</h2>
-                        <h2>#Horario</h2>
-                        <h2>#Ubicacion</h2>  
+                        <h2 class="horarioVolver" onclick="h2Toggle('.horario')">#volver</h2>
+                        <h2>lunes a sabado 13:00 a 16:00 y de 20:30 a 00:00 cierre cocina 15:30 y 23:30</h2>
                     </div>
                     <div class="ubicacion">
-                        <h2>#Acerca de nosotros</h2>
-                        <h2>#Servicios</h2>
-                        <h2>#Carta</h2>
-                        <h2>#Horario</h2>
-                        <h2>#Ubicacion</h2>  
+                        <h2 class="ubicacionVolver" onclick="h2Toggle('.ubicacion')">#volver</h2>
+                        <h2>Bolivia 34 bajo 36204 tel - 986170772</h2> 
                     </div>  
                     <div class="ofertas">
-                        <h2>#Acerca de nosotros</h2>
-                        <h2>#Servicios</h2>
-                        <h2>#Carta</h2>
-                        <h2>#Horario</h2>
-                        <h2>#Ubicacion</h2>  
-                    </div>                         -->
+                        <h2 class="ofertasVolver" onclick="h2Toggle('.ofertas')">#volver</h2>
+                        <h2>Siguenos en instagram y facebook para enterarte de nuetras ultimas ofertas</h2>  
+                    </div>  
+                    <div class="newsletter">
+                        <h2 class="newsletterVolver" onclick="h2Toggle('.newsletter')">#volver</h2>
+                        <h2>proximamente</h2> 
+                    </div>                        
                 </div>    
                
-                <!-- <a class="shopButton" href="#">Haz tu pedido</a> -->
+                <a class="shopButton" href="#">Haz tu pedido</a>
             </div>
             <div class="imgBox">
                 <img src="burrito.png" class="slider" alt="burrito icono">
@@ -137,7 +139,7 @@
 
         function h2Toggle(id) {
             const toggleRestInfo = document.querySelector('.restInfo')
-            const toggleProps = document.getElementById(id)
+            const toggleProps = document.querySelector(id)
             toggleRestInfo.classList.toggle('active')
             toggleProps.classList.toggle('active')
         }
