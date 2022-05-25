@@ -71,6 +71,12 @@ header ul li p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    visibility: visible;
+}
+
+.content .textBox.active {
+    position:absolute;
+    visibility: hidden;
 }
 
 .content .textBox h1 {
@@ -126,6 +132,20 @@ header ul li p {
 }
 
 .content .textBox .h2Tags .AcercaDeNosotros.active {
+    position: relative;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.content .hazTuPedido {
+    position: absolute;
+    visibility: hidden;
+}
+
+.content .hazTuPedido.active {
     position: relative;
     visibility: visible;
     display: flex;

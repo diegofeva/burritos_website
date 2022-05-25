@@ -19,7 +19,7 @@
                     <p onclick="h3Toggle('.restInfo')">Inicio</p>
                 </li>
                 <li>
-                    <a href="#">Haz tu pedido</a>
+                    <p onclick="h4Toggle('.hazTuPedido')">Haz tu pedido</a>
                 </li>
                 <li>
                     <p onclick="h3Toggle('.carta')">Carta</p>
@@ -36,6 +36,10 @@
             </ul>
         </header>
         <div class="content">
+            <div class="hazTuPedido">
+                <p class="volver" onclick="h3Toggle('.restInfo')">#volver</p>
+                <iframe src="https://www.foodbooking.com/api/fb/pm_g_v_m" title="BURRITOS SHOP"></iframe>
+            </div>
             <div class="textBox">
                 <div class="h1Info">
                     <h1>Restaurante Mexicano<br><span>Burritos</span></h1>
@@ -187,7 +191,7 @@
         }
 
         function h3Toggle(props) {
-            const listClass = ['.restInfo.active','.AcercaDeNosotros.active','.carta.active','.promociones.active','.localizanos.active','.horario.active','.servicios.active','.contacto.active','.rrss.active','.ubicacion.active','.promociones.active']
+            const listClass = ['.textBox.active','.hazTuPedido.active','.restInfo.active','.AcercaDeNosotros.active','.carta.active','.promociones.active','.localizanos.active','.horario.active','.servicios.active','.contacto.active','.rrss.active','.ubicacion.active','.promociones.active']
             for (nameClass of listClass) {
                 try {
                     const togglelistClass = document.querySelector(listClass);
@@ -198,7 +202,24 @@
             }           
             h2Toggle(props);  
             menuToggle();
-        }    
+        }   
+        
+        function h4Toggle(props) {
+            const listClass = ['.textBox.active','.hazTuPedido.active','.restInfo.active','.AcercaDeNosotros.active','.carta.active','.promociones.active','.localizanos.active','.horario.active','.servicios.active','.contacto.active','.rrss.active','.ubicacion.active','.promociones.active']
+            for (nameClass of listClass) {
+                try {
+                    const togglelistClass = document.querySelector(listClass);
+                    togglelistClass.classList.toggle('active');
+                }catch(TypeError){
+                    console.log('error');
+                }    
+            }
+            const toggleClass = document.querySelector('.textBox');
+            toggleClass.classList.toggle('active');           
+            
+            h2Toggle(props);  
+            menuToggle();
+        }  
 
     </script>
 
