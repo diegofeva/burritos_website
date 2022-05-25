@@ -16,22 +16,22 @@
             <div class="toggleMenu" onclick="menuToggle();"></div>
             <ul class="navigation">
                 <li>
-                    <a class="a" href="#">Inicio</a>
+                    <p onclick="h3Toggle('.restInfo')">Inicio</p>
                 </li>
                 <li>
                     <a href="#">Haz tu pedido</a>
                 </li>
                 <li>
-                    <a href="#">Carta</a>
+                    <p onclick="h3Toggle('.carta')">Carta</p>
                 </li>
                 <li>
-                    <a href="#">Conocenos</a>
+                    <p onclick="h3Toggle('.AcercaDeNosotros')">acerca de nosotros</p>
                 </li>
                 <li>
-                    <a href="#">Contacto</a>
+                    <p onclick="h3Toggle('.contacto')">Contacto</p>
                 </li>
                 <li>
-                    <a href="#">Ubicación</a>
+                    <p onclick="h3Toggle('.ubicacion')">Ubicación</p>
                 </li>
             </ul>
         </header>
@@ -39,55 +39,90 @@
             <div class="textBox">
                 <div class="h1Info">
                     <h1>Restaurante Mexicano<br><span>Burritos</span></h1>
-                    <p>Somos los  mejores de la ciudad y somos tambien los mejores del mundo</p>
+                    <p>Los mejores burritos de Vigo</p>
                 </div>   
                 <div class="h2Tags"> 
                     <div class="restInfo">
-                        <h2 onclick="h2Toggle('.AcercaDeNosotros')">#Acerca de nosotros</h2>
-                        <h2 onclick="h2Toggle('.servicios')">#Servicios</h2>
-                        <h2 onclick="h2Toggle('.carta')">#Carta</h2>
-                        <h2 onclick="h2Toggle('.horario')">#Horario</h2>
-                        <h2 onclick="h2Toggle('.ubicacion')">#Ubicacion</h2>   
-                        <h2 onclick="h2Toggle('.ofertas')">#Ofertas</h2>  
-                        <h2 onclick="h2Toggle('.newsletter')">#newsletter</h2>                     
+                        <p onclick="h2Toggle('.AcercaDeNosotros')">#Acerca de nosotros</p>
+                        <p onclick="h2Toggle('.carta')">#Carta</p>
+                        <p onclick="h2Toggle('.promociones')">#promociones</p> 
+                        <p onclick="h2Toggle('.localizanos')">#localizanos</p>
+                        <p onclick="h2Toggle('.horario')">#Horario</p>
+
+                        <!-- <p onclick="h2Toggle('.servicios')">#Servicios</p>
+                        <p onclick="h2Toggle('.carta')">#Carta</p>
+                        <p onclick="h2Toggle('.horario')">#Horario</p>
+                        <p onclick="h2Toggle('.ubicacion')">#Ubicacion</p>   
+                        <p onclick="h2Toggle('.ofertas')">#Ofertas</p>  
+                        <p onclick="h2Toggle('.newsletter')">#newsletter</p>                      -->
                     </div>
                     <div class="AcercaDeNosotros">
-                        <h2 class="acercaVolver" onclick="h2Toggle('.AcercaDeNosotros')">#volver</h2>
-                        <h2>mexicanos</h2>
-                        <h2>diferentes</h2>
-                        <h2>cocina moderna</h2>
-                        <h2>comida casera</h2>  
-                        <h2>opciones veganas</h2>
-                        <h2>sin sazonadores artificiales</h2>
+                        <p class="volver" onclick="h2Toggle('.AcercaDeNosotros')">#volver</p>
+                        <p>mexicanos</p>
+                        <p>diferentes</p>
+                        <p>cocina moderna</p>
+                        <p>comida casera</p>  
+                        <p>opciones veganas</p>
+                        <p>sin sazonadores artificiales</p>
 
                     </div>  
                     <div class="servicios">
-                        <h2 class="serviciosVolver" onclick="h2Toggle('.servicios')">#volver</h2>
-                        <h2>Disponemos de comedor con 5 mesas por lo que recomendamos reservar mesa en el 986170772 tambien hacemos pedidos a domicilio y recoger </h2>
+                        <p class="volver" onclick="h2Toggle('.servicios')">#volver</p>
+                        <p>Disponemos de comedor con 5 mesas por lo que recomendamos reservar mesa en el 986170772 tambien hacemos pedidos a domicilio y recoger </p>
                     </div>   
                     <div class="carta">
-                        <h2 class="cartaVolver" onclick="h2Toggle('.carta')">#volver</h2>
-                        <h2>nachos</h2>
-                        <h2>quesadillas</h2>
-                        <h2>flautas</h2>
-                        <h2>burritos</h2>
-                        <h2>chimichangas</h2>  
+                        <p class="volver" onclick="h2Toggle('.carta')">#volver</p>
+                        <p>nachos</p>
+                        <p>quesadillas</p>
+                        <p>flautas</p>
+                        <p>burritos</p>
+                        <p>chimichangas</p>  
                     </div>
+
+                    <div class="localizanos">
+                        <p class="volver" onclick="h2Toggle('.localizanos')">#volver</p>
+                        <p onclick="h2Toggle2('.ubicacion','.localizanos')">ubicacion</p>
+                        <p onclick="h2Toggle2('.contacto','.localizanos')">contacto</p>
+                        <p onclick="h2Toggle2('.horario','.localizanos')">horario</p>
+                        <p onclick="h2Toggle2('.rrss','.localizanos')">redes sociales</p>  
+                    </div>
+
                     <div class="horario">
-                        <h2 class="horarioVolver" onclick="h2Toggle('.horario')">#volver</h2>
-                        <h2>lunes a sabado 13:00 a 16:00 y de 20:30 a 00:00 cierre cocina 15:30 y 23:30</h2>
+                        <p class="volver" onclick="h2Toggle2('.horario','.localizanos')">#volver</p>
+                        <p>lunes a sabado 13:00 a 16:00 y de 20:30 a 00:00</p>
+                        <p>cierre de cocina 15:30 y 23:30</p>
                     </div>
+
+                    <div class="contacto">
+                        <p class="volver" onclick="h2Toggle2('.contacto','.localizanos')">#volver</p>
+                        <p>
+                           Mandanos un mail <a href="mailto:burritosbar@gmail.com?subject=Contacto%web%burritos">burritosbar@gmail.com</a>
+                        </p>
+                        <p>
+                           Llamanos por telefono <a href="tel:+34986170772">986170772</a>
+                        </p>
+                    </div>
+
+                    <div class="rrss">
+                        <p class="volver" onclick="h2Toggle2('.rrss','.localizanos')">#volver</p>
+                        <p>lunes a sabado 13:00 a 16:00 y de 20:30 a 00:00</p>
+                        <p>cierre de cocina 15:30 y 23:30</p>
+                    </div>
+
                     <div class="ubicacion">
-                        <h2 class="ubicacionVolver" onclick="h2Toggle('.ubicacion')">#volver</h2>
-                        <h2>Bolivia 34 bajo 36204 tel - 986170772</h2> 
+                        <p class="volver" onclick="h2Toggle2('.ubicacion', '.localizanos')">#volver</p>
+                        <p>
+                            Estamos en rua Bolivia 34 bajo <br> <a href="https://www.google.com/maps/dir/?api=1&destination=burritos+vigo&travelmode=driving">#Como llegar</a>
+                        </p>
+                        <p>Teléfono - 986170772</p> 
                     </div>  
-                    <div class="ofertas">
-                        <h2 class="ofertasVolver" onclick="h2Toggle('.ofertas')">#volver</h2>
-                        <h2>Siguenos en instagram y facebook para enterarte de nuetras ultimas ofertas</h2>  
+                    <div class="promociones">
+                        <p class="volver" onclick="h2Toggle('.promociones')">#volver</p>
+                        <p>Siguenos en instagram y facebook para enterarte de nuetras ultimas ofertas</p>  
                     </div>  
                     <div class="newsletter">
-                        <h2 class="newsletterVolver" onclick="h2Toggle('.newsletter')">#volver</h2>
-                        <h2>proximamente</h2> 
+                        <p class="volver" onclick="h2Toggle('.newsletter')">#volver</p>
+                        <p>proximamente</p> 
                     </div>                        
                 </div>    
                
@@ -137,12 +172,33 @@
             navigation.classList.toggle('active');
         }
 
-        function h2Toggle(id) {
-            const toggleRestInfo = document.querySelector('.restInfo')
-            const toggleProps = document.querySelector(id)
+        function h2Toggle2(props,props2) {
+            const toggleRestInfo = document.querySelector(props2)
+            const toggleProps = document.querySelector(props)
             toggleRestInfo.classList.toggle('active')
             toggleProps.classList.toggle('active')
         }
+
+        function h2Toggle(props) {
+            const toggleRestInfo = document.querySelector('.restInfo')
+            const toggleProps = document.querySelector(props)
+            toggleRestInfo.classList.toggle('active')
+            toggleProps.classList.toggle('active')
+        }
+
+        function h3Toggle(props) {
+            const listClass = ['.restInfo.active','.AcercaDeNosotros.active','.carta.active','.promociones.active','.localizanos.active','.horario.active','.servicios.active','.contacto.active','.rrss.active','.ubicacion.active','.promociones.active']
+            for (nameClass of listClass) {
+                try {
+                    const togglelistClass = document.querySelector(listClass);
+                    togglelistClass.classList.toggle('active');
+                }catch(TypeError){
+                    console.log('error');
+                }    
+            }           
+            h2Toggle(props);  
+            menuToggle();
+        }    
 
     </script>
 
