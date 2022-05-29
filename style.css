@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 * {
     margin: 0;
@@ -15,7 +16,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #ffff;
+    background: #FFF;
     transition: 0.5s;
 }
 
@@ -52,6 +53,8 @@ header ul li p {
     font-weight: 700;
     margin-left: 40px;
     text-decoration: none;
+    cursor:pointer;
+    text-align: center;
 }
 
 .content {
@@ -85,13 +88,14 @@ header ul li p {
 
 .content .shop .volver {
     width: 100%;
-    color: #89ab02;
+    color: #05cbf3;
     cursor: pointer;
     padding: 5px;
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 } 
 .content .textBox {
     position: relative;
@@ -108,7 +112,7 @@ header ul li p {
 }
 
 .content .textBox h1 {
-    color: #05cbf3;;
+    color: #89ab02;;
     font-size: 2.5em;
     line-height: 1.2em;
     font-weight: 900;
@@ -120,15 +124,16 @@ header ul li p {
 .content .textBox h1 span {
     font-size: 3em;
     line-height: 1em;
-    color: #B6C454;
+    color: #05cbf3;
 
 }
 
 .content .textBox .h1Info p {
-    color:#05cbf3; 
+    color:#89ab02; 
     width: 100%;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.3em;
+    font-weight: 900;
 } 
 
 
@@ -292,20 +297,49 @@ header ul li p {
    
 }
 
-.content .textBox .h2Tags .volver {
-    width: 100%;
-    color: #89ab02;
-    cursor: pointer;
-} 
-
 .content .textBox p {
+    padding: 5px;
+    text-align: center;
+    color: #da19da;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
+    
+}
+
+.content .textBox .restInfo p {
     padding: 5px;
     text-transform: uppercase;
     text-align: center;
     color: #05cbf3;
     font-size: 1.5em;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    
 }
+
+.content .textBox .localizanos p {
+    padding: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #da19da;
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.content .textBox .h2Tags .volver {
+    width: 100%;
+    color: #05cbf3;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+} 
 
 
 .content .textBox a {
@@ -322,12 +356,14 @@ header ul li p {
     margin-top: 20px;
     padding: 8px 20px;
     background: #89ab02;
-    color: #fff;
+    color: #FFF;
     border-radius: 40px;
     font-weight: 1000;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;  
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
 
 .content .imgBox {
@@ -388,6 +424,7 @@ header ul li p {
     display: flex;
     align-items: center;
     flex-direction: column;
+    z-index: 1;
 }
 
 .sci.active {
@@ -449,14 +486,17 @@ header ul li p {
 
     }
 
-    header ul li a {
+    header ul li p {
         display: inline-block;
         color: #05cbf3;
         font-weight: 400;
         margin-left: 0;
         text-decoration: none;
-        font-size: 2em;
+        font-size: 3em;
         margin: 10px 0;
+        /* line-height: 1.2em; */
+        font-size: 2em;
+
     }
 
     header ul li a:hover {
@@ -543,37 +583,11 @@ header ul li p {
 }
 
 @media (max-width: 500px) {
-    .sci {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        width: 50px;
-        transform: translateY(-107%);
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
 
-    .content .textBox h1 {
-        font-size: 1.1em;
-        
+    section {
+        padding: 0px;
+        padding-bottom: 0px;
     }
-
-    .thumb li img {
-        max-width: 60px;
-    }
-
-    .content .imgBox img {
-        max-width: 260px;
-        padding-bottom: 60px;
-    }
-    .content .textBox p {
-        font-size: 1em;
-    }
-
-    .content .shop .volver {
-           font-size: 1em;
-    } 
 
     header{
         padding: 8px 5px;
@@ -585,27 +599,28 @@ header ul li p {
         top:5px;
     }
 
-     .content {
-         margin-top: 50px;
+    .content {
+        margin-top: 50px;
+   }
+
+   .content .shop .volver {
+        font-size: 1em;
+    } 
+
+   .content .textBox p {
+        font-size: 1em;
     }
 
-     .sci {
-        transform: translateY(44%);
-        padding-right: 0px;
-  
+   .content .textBox h1 {
+        font-size: 1.1em;
     }
 
-    .sci li a {
-       margin: -18px;
+    .content .textBox .restInfo p {
+        font-size: 1.2em;
     }
 
-     .sci li a img {
-        max-width: 60px;
-        max-height: 60px;
-    }
-
-    .thumb {
-        bottom: 8px;
+    .content .textBox .localizanos p {
+        font-size: 1em;
     }
 
     .content .imgBox {
@@ -618,9 +633,71 @@ header ul li p {
         margin-right: 15%;
     }
 
-    section {
-        padding: 0px;
-        padding-bottom: 0px;
+    .content .imgBox img {
+        max-width: 260px;
+        padding-bottom: 60px;
     }
+
+    .sci {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 50px;
+        transform: translateY(-107%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+   
+    .thumb {
+        bottom: 8px;
+    }
+
+    .thumb li img {
+        max-width: 60px;
+    }
+
+    
+
+     .sci {
+        transform: translateY(44%);
+        padding-right: 0px;
+  
+    }
+
+    .sci li a {
+       margin: -18px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     .sci li a img {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
 }
 
