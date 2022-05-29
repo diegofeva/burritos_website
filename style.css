@@ -63,6 +63,36 @@ header ul li p {
     z-index: 1;
 }
 
+.content .shop {
+    display: none;
+
+}
+
+.content .shop.active {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.content .shop iframe {
+    position: relative;
+    width: 1000px;
+    min-height: 90vh;
+}
+
+.content .shop .volver {
+    width: 100%;
+    color: #89ab02;
+    cursor: pointer;
+    padding: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+} 
 .content .textBox {
     position: relative;
     max-width: 600px;
@@ -71,6 +101,10 @@ header ul li p {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.content .textBox.active {
+    display: none;
 }
 
 .content .textBox h1 {
@@ -110,10 +144,9 @@ header ul li p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     cursor: pointer;
-    visibility: visible;
-
-    
+    visibility: visible;    
 }
+
 
 .content .textBox .h2Tags .restInfo.active {
     position: absolute;
@@ -121,8 +154,7 @@ header ul li p {
 }
 
 .content .textBox .h2Tags .AcercaDeNosotros {
-    position: absolute;
-    visibility: hidden;
+    display: none;
 }
 
 .content .textBox .h2Tags .AcercaDeNosotros.active {
@@ -135,8 +167,7 @@ header ul li p {
 }
 
 .content .textBox .h2Tags .servicios {
-    position: absolute;
-    visibility: hidden;
+    display: none;
 }
 
 .content .textBox .h2Tags .servicios.active {
@@ -150,8 +181,7 @@ header ul li p {
 }
 
 .content .textBox .h2Tags .carta {
-    position: absolute;
-    visibility: hidden;
+    display: none;
 }
 
 .content .textBox .h2Tags .carta.active {
@@ -165,8 +195,7 @@ header ul li p {
 }
 
 .content .textBox .h2Tags .horario {
-    position: absolute;
-    visibility: hidden;
+    display: none;
 }
 
 .content .textBox .h2Tags .horario.active {
@@ -180,8 +209,7 @@ header ul li p {
 }
 
 .content .textBox .h2Tags .rrss {
-    position: absolute;
-    visibility: hidden;
+    display: none;
 }
 
 .content .textBox .h2Tags .rrss.active {
@@ -195,8 +223,7 @@ header ul li p {
 }
 
 .content .textBox .h2Tags .contacto {
-    position: absolute;
-    visibility: hidden;
+    display: none;
 }
 
 .content .textBox .h2Tags .contacto.active {
@@ -209,8 +236,7 @@ header ul li p {
 }
 
 .content .textBox .h2Tags .localizanos {
-    position: absolute;
-    visibility: hidden;
+    display: none;
 }
 
 .content .textBox .h2Tags .localizanos.active {
@@ -225,8 +251,7 @@ header ul li p {
 }
 
 .content .textBox .h2Tags .ubicacion {
-    position: absolute;
-    visibility: hidden;
+    display: none;
 }
 
 .content .textBox .h2Tags .ubicacion.active {
@@ -240,8 +265,7 @@ header ul li p {
 }
 
 .content .textBox .h2Tags .promociones {
-    position: absolute;
-    visibility: hidden;
+    display: none;
 }
 
 .content .textBox .h2Tags .promociones.active {
@@ -255,8 +279,7 @@ header ul li p {
 }
 
 .content .textBox .h2Tags .newsletter {
-    position: absolute;
-    visibility: hidden;
+    display: none;
 }
 
 .content .textBox .h2Tags .newsletter.active {
@@ -283,6 +306,7 @@ header ul li p {
     font-size: 1.5em;
     font-weight: bold;
 }
+
 
 .content .textBox a {
     padding: 5px;
@@ -315,9 +339,12 @@ header ul li p {
     
 }
 
+.content .imgBox.active{
+    display: none;
+}
+
 .content .imgBox img {
-    max-width: 370px;
-    
+    max-width: 370px; 
 }
 
 .thumb {
@@ -327,7 +354,11 @@ header ul li p {
     transform: translateX(-50%);
     display:flex;
     z-index: 1;
-    
+}
+
+.thumb.active {
+    display:none;
+    transition: 0s;
 }
 
 .thumb li {
@@ -335,11 +366,14 @@ header ul li p {
     display: inline-block;
     margin: 0 20px;
     cursor: pointer;
-    transition: 0.5s;
+    
 }
 
 .thumb li:hover {
     transform: translateY(-15px);
+    transition: 0.2s;
+    transition-timing-function: linear;
+
 }
 
 .thumb li img {
@@ -354,6 +388,10 @@ header ul li p {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.sci.active {
+    display: none;
 }
 
 .sci li {
@@ -395,7 +433,7 @@ header ul li p {
         max-width: 80px;
     } 
 
-     header ul {
+    header ul {
         position: fixed;
         top: 0;
         left: 0;
@@ -456,6 +494,10 @@ header ul li p {
         margin-top: 80px;
     }
 
+    .content .shop iframe {
+        width: 100%;
+    }
+
     .content .textBox {
         position: relative;
         display: flex;
@@ -500,8 +542,7 @@ header ul li p {
     }
 }
 
-
-@media (max-width: 607px) {
+@media (max-width: 500px) {
     .sci {
         position: absolute;
         top: 50%;
@@ -529,6 +570,10 @@ header ul li p {
     .content .textBox p {
         font-size: 1em;
     }
+
+    .content .shop .volver {
+           font-size: 1em;
+    } 
 
     header{
         padding: 8px 5px;
